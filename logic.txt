@@ -1,0 +1,25 @@
+Understand what we are doing. 
+
+We are putting a input box in web page ie view 
+
+In that view, the user is changing the state of input so we are using 
+onChange to read that change. 
+The onChange is allowing to read the change but what should we do in that is what we can define. 
+
+Here we are reading the input emojis and giving them back what does the emoji mean. 
+What does the emoji mean? It is defined in an object. 
+
+The object has key value pair that allows to access the value for the corresponding key. 
+
+Now key is entered in input box. We are reading that through onChange and storing that input in a variable. Now that we have got the key we are updating the value for that key to a variable called meaning 
+
+meaning holds a initial value of "" 
+Now everytime an input is put we are updating meaning value to current state by assigning it the value of input. event.target.value fetches the current input. This is stored in a variable called userInput now this userInput is a key. So we store the meaning as setMeaning = arrayName[userInput]
+
+Remember setMeaning should be used to set the current state of meaning. 
+Why is this? if you assign it to meaning, it will throw an error as meaning is defined as constant. and its value is initialized to "". 
+
+Why do we use [userInput] to access the value of object's key? because the key is not known. If the key is known we could have used the dot notation. here [] implies that it is a variable and can hold anything. 
+
+Now that we have the value in the form of meaning. we can use that in view using JSX {meaning} this will directly output in the view. 
+
